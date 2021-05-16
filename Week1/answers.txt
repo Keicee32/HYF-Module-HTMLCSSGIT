@@ -1,0 +1,14 @@
+* To hide a folder using CLI, the following prompt is used "attrib +s +h C:\nameOfDocument. This simply means in the C drive of your computer, hide the specified document.
+
+* To hide a file, the same command is used except the file and its extension is used. For example "attrib +s +h C:\directory\nameOfFile.ext".
+
+* To show hidden files on the CLI, the follwoing command is used "dir/a" this lists all files and directories hidden in the current directory.
+
+NB - The commands are typed withput the quotation marks.
+
+
+** To create multiple directories on CLI, the command "md nameOfDir\nameOfanother\nameOfYetAnother\....." is used.
+NB: the ... in the command above represents as many directories as pssible.
+
+
+*** echo -n
