@@ -1,0 +1,246 @@
+/* DESKTOP DESIGN */
+@media screen and (min-width: 1025px){
+    .float-design{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    .grid-floats{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .grid-floats .grid-item{
+        float: left;
+        background-color: darkgreen;
+        margin: 10px;
+        text-align: center;
+    }
+
+    /* FLEX DESIGN */
+    .flex-design{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    .grid-flex{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .grid-item{
+        background-color: crimson;
+        margin: auto;
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .grid-item:first-child{
+        width: 47.5%;
+        height: 500px;
+    }
+
+    .grid-item:first-child img{
+        width: 65%;
+        margin: auto;
+        display: flex;
+    }
+
+    .grid-item:nth-child(2),
+    .grid-item:nth-child(3){
+        width: 22.5%;
+        height: 500px;
+    }
+
+    .grid-item:nth-child(4),
+    .grid-item:nth-child(5),
+    .grid-item:nth-child(6),
+    .grid-item:nth-child(7){
+        width: 22.5%;
+        height: 500px;
+    }
+
+    .grid-item:nth-child(8),
+    .grid-item:nth-child(9),
+    .grid-item:nth-child(10),
+    .grid-item:nth-child(11){
+        width: 22%;
+        height: 500px;
+    }
+
+    .grid-item:nth-child(12),
+    .grid-item:nth-child(13),
+    .grid-item:nth-child(14){
+        width: 30%;
+        height: 500px;
+    }
+   
+}
+
+/* TABLET DESIGN */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .flex-design{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    .grid-flex{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .grid-item{
+        margin: auto;
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+        background-color: violet;
+    }
+
+    .grid-item:first-child,
+    .grid-item:nth-child(2){
+        width: 45%;
+        height: 500px;
+    }
+
+    .grid-item:nth-child(3),
+    .grid-item:nth-child(4),
+    .grid-item:nth-child(5),
+    .grid-item:nth-child(6),
+    .grid-item:nth-child(7),
+    .grid-item:nth-child(8),
+    .grid-item:nth-child(9),
+    .grid-item:nth-child(10),
+    .grid-item:nth-child(11),
+    .grid-item:nth-child(12),
+    .grid-item:nth-child(13),
+    .grid-item:nth-child(14){
+        width: 30%;
+        height: 400px;
+    }
+
+    .float-design{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .grid-floats{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .grid-floats .grid-item{
+        float: left;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .grid-item img{
+        width: 80%;
+        margin: auto;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .float-design{
+        width: 100%;
+        display: block;
+        text-align: center;
+        clear: both;
+    }
+
+    .float-design .grid-item{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .grid-item img{
+        width: 80%;
+    }
+
+    .flex-design .grid-item img{
+        width: 80%;
+        text-align: center;
+    }
+
+    .flex-design{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flex-design .grid-item{
+        width: 90%;
+        margin: auto;
+        align-self: center;
+    }
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: teal;
+}
+
+.grid-item,
+.grid-floats,
+.grid-flex{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
